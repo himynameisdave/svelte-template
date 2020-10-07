@@ -1,0 +1,30 @@
+/*
+  GLOBALS
+*/
+:root {
+  --color-main-blue: #0000ff;
+  --color-secondary-blue: #000088;
+  --color-black: #000;
+  --color-off-black: #333;
+  --color-white: #fff;
+  --color-off-white: #ddd;
+
+  --gradient-var: linear-gradient(to top left, var(--color-secondary-blue), var(--color-main-blue));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root, html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 2.25vw;
+  line-height: 1.25;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
