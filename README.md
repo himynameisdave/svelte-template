@@ -1,28 +1,38 @@
-<div align="center" margin="0 auto 20px">
-  <h1>svelte-template</h1>
-  <p style="font-style: italic;">
-    📑 A template for Svelte projects, with Typescript and some sane defaults.
-  </p>
-  <!--
-  <div>
-    BADGES
-    <a href='https://travis-ci.com/github/himynameisdave/svelte-flex'>
-        <img src="https://travis-ci.com/himynameisdave/svelte-flex.svg?branch=master" alt="Travis Badge" />
-    </a>
-  </div>
-  -->
-</div>
+# create-svelte
 
----
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-This is a template for simple Svelte projects, created by [himynameisdave](https://github.com/himynameisdave). It will continue to be updated and modified as I continue to update the process that I use for building Svelte apps.
+## Creating a project
 
-### Features
+If you're seeing this, you've probably already done this step. Congrats!
 
-- Svelte
-- Typescript
-- _...that's all for now, folks..._
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
----
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-> _✌️ Built by [Dave](https://github.com/himynameisdave)._
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
