@@ -7,6 +7,8 @@
 
 ---
 
+_⚠️ Work in progress in moving this over to Sveltekit._
+
 ### About
 
 This is an extension of the default [`sveltekit`](https://kit.svelte.dev) demo project you can generate by following [the instructions](https://kit.svelte.dev/docs/creating-a-project). It extends it by providing defaults which I would almost always want in a project, as well as setting up things how I prefer them (such as including [`eslint-config-himymameisdave`](https://github.com/himynameisdave/eslint-config-himynameisdave)).
