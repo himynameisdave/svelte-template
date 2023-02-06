@@ -1,28 +1,27 @@
 <div align="center" margin="0 auto 20px">
-  <h1>svelte-template</h1>
+  <h1>sveltekit-template</h1>
   <p style="font-style: italic;">
-    📑 A template for Svelte projects, with Typescript and some sane defaults.
+    📑 A template for Sveltekit projects by and for <a href="https://github.com/himynameisdave">himynameisdave</a>.
   </p>
-  <!--
-  <div>
-    BADGES
-    <a href='https://travis-ci.com/github/himynameisdave/svelte-flex'>
-        <img src="https://travis-ci.com/himynameisdave/svelte-flex.svg?branch=master" alt="Travis Badge" />
-    </a>
-  </div>
-  -->
 </div>
 
 ---
 
-This is a template for simple Svelte projects, created by [himynameisdave](https://github.com/himynameisdave). It will continue to be updated and modified as I continue to update the process that I use for building Svelte apps.
+_⚠️ Work in progress in moving this over to Sveltekit._
 
-### Features
+### About
 
-- Svelte
-- Typescript
-- _...that's all for now, folks..._
+This is an extension of the default [`sveltekit`](https://kit.svelte.dev) demo project you can generate by following [the instructions](https://kit.svelte.dev/docs/creating-a-project). It extends it by providing defaults which I would almost always want in a project, as well as setting up things how I prefer them (such as including [`eslint-config-himymameisdave`](https://github.com/himynameisdave/eslint-config-himynameisdave)).
+
+### Running
+
+```bash
+# Pick your package manager
+yarn install
+
+yarn dev
+```
 
 ---
 
-> _✌️ Built by [Dave](https://github.com/himynameisdave)._
+_Built by <a href="https://github.com/himynameisdave">himynameisdave</a>. in 2023_
