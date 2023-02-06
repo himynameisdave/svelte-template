@@ -8,8 +8,8 @@
 	$: offset = modulo($displayed_count, 1);
 
 	function modulo(n: number, m: number) {
-		// handle negative numbers
-		return ((n % m) + m) % m;
+	  // handle negative numbers
+	  return ((n % m) + m) % m;
 	}
 </script>
 
