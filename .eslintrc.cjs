@@ -21,7 +21,21 @@ module.exports = {
     extraFileExtensions: ['.svelte'],
     project: ['./tsconfig.json'],
   },
-  overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
+  overrides: [
+    {
+      files: ['*.svelte'],
+      processor: 'svelte3/svelte3',
+      // rules: {
+      //   //  These import rules are known not to work with Svelte
+      //   //  Read more: https://github.com/sveltejs/eslint-plugin-svelte3/blob/master/OTHER_PLUGINS.md#eslint-plugin-import
+      //   'import/extensions': 'off',
+      //   'import/first': 'off',
+      //   'import/no-mutable-exports': 'off',
+      //   'import/no-unresolved': 'off',
+      //   'import/prefer-default-export': 'off',
+      // },
+    },
+  ],
   settings: {
     'svelte3/typescript': () => require('typescript'),
     'import/parsers': {
@@ -40,10 +54,10 @@ module.exports = {
     node: true
   },
   rules: {
-    // 'import/extensions': 'off',
     'n/file-extension-in-import': 'off',
     'n/no-unsupported-features/es-syntax': 'off',
     //  Dumb rule:
     'n/no-unpublished-import': 'off',
+    // 'import/newline-after-import': ['error', { count: 1 }]
   },
 };

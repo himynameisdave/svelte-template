@@ -41,5 +41,11 @@
     "vite": "^4.0.0",
     "vitest": "^0.25.3",
     "husky": "^8.0.0"
-  }
+  },
+  "author": {
+    "name": "Dave Lunny",
+    "url": "https://himynameisdave.com",
+    "email": "d@velunny.com"
+  },
+  "private": true
 }
