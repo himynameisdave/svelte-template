@@ -10,10 +10,11 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "playwright test",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "test:unit": "vitest",
+    "test": "playwright test",
+    "prepare": "husky install",
     "lint:fix": "eslint . --ext .svelte --ext .ts --fix",
     "lint": "eslint . --ext .svelte --ext .ts"
   },
@@ -38,6 +39,7 @@
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
-    "vitest": "^0.25.3"
+    "vitest": "^0.25.3",
+    "husky": "^8.0.0"
   }
 }
