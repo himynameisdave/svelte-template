@@ -43,5 +43,7 @@ module.exports = {
     // 'import/extensions': 'off',
     'n/file-extension-in-import': 'off',
     'n/no-unsupported-features/es-syntax': 'off',
+    //  Dumb rule:
+    'n/no-unpublished-import': 'off',
   },
 };
