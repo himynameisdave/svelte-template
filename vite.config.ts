@@ -5,7 +5,8 @@ import type { InlineConfig } from 'vitest';
 const config: UserConfig & { test: InlineConfig } = {
   plugins: [sveltekit()],
   test: {
-    include: ['src/**/*.{test,spec}.{js,ts}']
+    include: ['src/**/*.{test,spec}.{js,ts}'],
+    watch: false,
   },
 };
 
