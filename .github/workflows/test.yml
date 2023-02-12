@@ -1,0 +1,36 @@
+name: Test code
+run-name: ${{ github.actor }} is running the test suite.
+on: [push, pull_request]
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.14.0
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install
+  Type-Check:
+    runs-on: ubuntu-latest
+    needs: [Build]
+      - name: Type Check
+        run: yarn run check
+  Lint:
+    runs-on: ubuntu-latest
+    needs: [Build]
+      - name: Lint
+        run: yarn run lint
+  Unit-Test:
+    runs-on: ubuntu-latest
+    needs: [Build]
+      - name: Unit tests
+        run: yarn run test:unit
+  Playwright-Test:
+    runs-on: ubuntu-latest
+    needs: [Build]
+      - name: Playwright tests
+        run: yarn run test
