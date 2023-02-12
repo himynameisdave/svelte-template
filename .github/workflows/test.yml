@@ -14,10 +14,10 @@ jobs:
           cache: yarn
       - name: Install dependencies
         run: yarn install
-  Type-Check:
+  Typecheck:
     runs-on: ubuntu-latest
     needs: [Build]
-      - name: Type Check
+      - name: Typecheck
         run: yarn run check
   Lint:
     runs-on: ubuntu-latest
