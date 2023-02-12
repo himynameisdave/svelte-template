@@ -17,20 +17,24 @@ jobs:
   Typecheck:
     runs-on: ubuntu-latest
     needs: [Build]
+    steps:
       - name: Typecheck
         run: yarn run check
   Lint:
     runs-on: ubuntu-latest
     needs: [Build]
+    steps:
       - name: Lint
         run: yarn run lint
   Unit-Test:
     runs-on: ubuntu-latest
     needs: [Build]
+    steps:
       - name: Unit tests
         run: yarn run test:unit
   Playwright-Test:
     runs-on: ubuntu-latest
     needs: [Build]
+    steps:
       - name: Playwright tests
         run: yarn run test
